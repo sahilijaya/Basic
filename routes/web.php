@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/', [FrontController::class, 'index'])->name('page.home');
 Route::post('/store', [PesertaController::class, 'store'])->name('peserta.store');
 
-Route::prefix('admin')->controller(BackController::class)->group(function(){
+Route::middleware('auth')->prefix('admin')->controller(BackController::class)->group(function(){
     Route::get('/dashboard', 'index')->name('admin.dashboard');
 
     Route::controller(PesertaController::class)->group(function(){
