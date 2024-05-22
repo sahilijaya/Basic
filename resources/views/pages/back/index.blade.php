@@ -128,7 +128,8 @@
                                 <td>{{$data->jumlah}}</td>
                                 <td>{{$data->layanan}}</td>
                                 <td>
-                                    <a href="{{route('peserta.edit', $data->id)}}" class="btn btn-success btn-sm">Edit</a>
+                                    <a href="{{route('admin.peserta.edit', $data->id)}}" class="btn btn-success btn-sm">Edit</a>
+                                    <a href="{{route('admin.peserta.destroy', $data->id)}}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
                             @php

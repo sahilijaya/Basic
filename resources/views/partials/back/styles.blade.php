@@ -10,3 +10,4 @@
 <!-- DataTables -->
 <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
 <!-- <link href="https://cdn.datatables.net/2.0.5/css/dataTables.bootstrap5.css" rel="stylesheet"> -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

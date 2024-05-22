@@ -84,14 +84,16 @@ class PesertaController extends Controller
 
         $peserta->update($update);
 
-        return redirect()->route('pages.back.dashboard');
+        return redirect()->route('admin.dashboard');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Peserta $peserta)
+    public function destroy($id)
     {
-        //
+        $peserta = Peserta::where('id', $id);
+        $peserta->delete();
+        return redirect()->back();
     }
 }

@@ -10,7 +10,7 @@
     </div>
 
     <!-- Form Edit Data Peserta -->
-    <form action="{{route('peserta.update', $peserta->id)}}" method="POST">
+    <form action="{{route('admin.peserta.update', $peserta->id)}}" method="POST">
             @csrf
             @method('PUT')
         <div class="row align-items-stretch mb-5">

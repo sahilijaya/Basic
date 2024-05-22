@@ -566,4 +566,14 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function success(){
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+    }
+
+</script>
 @endsection()
